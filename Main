@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FlyDreamAir</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="styles.css">
+
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body id="bodyId" class="bg-muted">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="FlyDreamAir1.png" width="64" height="30" class="d-inline-block align-top" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Sales<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Office Locations<span class="sr-only">(current)</span></a>
+      </li>
+	  <!--<li class="nav-item active">
+        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop2" onclick="custInfoFunc()" id="custInfo"  class="btn btn-outline-success my-2 my-sm-0" type="button"></a>
+      </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+	  <li class="nav-item active">
+        <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop2" onclick="custInfoFunc()" id="custInfo"  class="btn btn-outline-success my-2 my-sm-0" type="button"></a>
+      </li>
+    </form>
+  </div>
+</nav>
+
+<br>
+
+<div class="container">
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+    <ol class="carousel-indicators">
+            <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="3"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="4"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="5"></li>
+            <li data-target="#carouselExampleFade" data-slide-to="6"></li>
+        </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+           <img class="d-block w-100 rounded mx-auto" src="kangaroo33.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Australia - the Kangaroo place
+                    <a class="btn btn-default bg-light" href="https://www.australia.com/en">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+			<img class="d-block w-100 rounded mx-auto" src="melbourne1.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Melbourne - the cultural capital of Australia
+                    <a class="btn btn-default bg-light" href="http://www.melbourne.vic.gov.au/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 rounded mx-auto" src="goldCoast3.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Gold Coast - the surfers paradise
+                    <a class="btn btn-default bg-light" href="http://www.goldcoast.qld.gov.au/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 rounded mx-auto" src="uluru2.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Uluru - the world's second largest monolith
+                    <a class="btn btn-default bg-light" href="http://uluru-australia.com/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 rounded mx-auto" src="sydney.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Sydney - the biggest Australian city
+                    <a class="btn btn-default bg-light" href="https://www.sydney.com/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 rounded mx-auto" src="perth1.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Perth - the capital of Western Australia
+                    <a class="btn btn-default bg-light" href="https://www.perth.wa.gov.au/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 rounded mx-auto" src="croc45.jpg" alt="">
+            <div class="carousel-caption" role="option">
+                <p>
+                    Darwin - the capital of Northern Territory
+                    <a class="btn btn-default bg-light" href="https://www.darwin.nt.gov.au/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+	
+  <div class="text-center">
+    <a href="#"><img class="d-block mx-auto" src="FlyDreamAir.png" alt="" width="" height=""></a>
+    <!--<h2 class="text-success">Fly Dream Airlines</h2>
+    <p class="lead">Some company information.....</p>-->
+  </div>
+
+<div class="jumbotron">
+  <h1 class="display-5 text-center colorJomb">Fly Dream Airlines</h1>
+  <p class="lead text-center">Explore Australia with FlyDreamAir. The country of the year! <b style="color:maroon;">Huge sales for this destination!</b></p>
+</div>
+ 
+ <div id="updateDiv">
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-3"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+		<path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+		</svg> Book a flight</h4>
+      <!--<form class="needs-validation" novalidate="">-->
+	  <hr class="mb-4">
+        <div class="row">
+          <div class="col-md-6 mb-3 autocomplete">
+			<img src="plane.png" alt="" width="22" height="22">
+            <label for="depart">From</label>
+            <input type="text" class="form-control" id="depart" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid depart name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3 autocomplete">
+			<img src="plane1.png" alt="" width="22" height="22">
+            <label for="arrive">Destination</label>
+            <input type="text" class="form-control" id="arrive" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid arrive name is required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+		
+	<div class="row">
+		<div class="col-md-3 mb-3">
+			<h5 class="mb-3">Return type</h5>
+			<div class="d-block my-3">
+				<div class="custom-control custom-radio">
+					<input id="single" name="flight" type="radio" class="custom-control-input" required="" onclick="javascript:yesnoCheck();">
+					<label class="custom-control-label" for="single">One way</label>
+				</div>
+				<div class="custom-control custom-radio">
+					<input id="return" name="flight" type="radio" class="custom-control-input" required="" onclick="javascript:yesnoCheck();">
+					<label class="custom-control-label" for="return">Return</label>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 mb-3">
+			<div class="firstDate" id="firstDate" onclick="yesnoCheck();">
+				<img src="notepad1.png" alt="" width="25" height="25">
+				<label for="singleDate">When?</label>
+				<input type="text" class="form-control" name="singleDate" value="" />
+			</div>
+			<div class="secondDate" id="secondDate" onclick="yesnoCheck();">
+				<img src="notepad.png" alt="" width="25" height="25">
+				<label for="datefilter">When?</label>
+				<input type="text" class="form-control" name="datefilter" value="" />
+			</div>
+		</div>
+		
+		<div id="showMainBtn" class="col-md-3 mb-3"> 	
+			<!-- BUTTON -->
+				<label for="singleDate"></label>
+				<button class="btn btn_color btn-lg btn-block" onclick="validateName()" type="submit">Check flights</button>
+			<!-- BUTTON -->
+			<div  class="col-md-12 mb-3">
+				<label></label>
+				<p id="show"></p>
+			</div>
+		</div>
+		
+	</div>
+		<hr class="mb-4">
+		
+		<!--<div class="row">
+			<div class="col-md-3 mb-3"> 	
+				<button class="btn btn_color btn-lg btn-block" onclick="validateName()" type="submit">Check flights</button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 mb-3">
+				<p id="show"></p>
+			</div>
+		</div>-->
+<!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD -->
+		<h5 id="title" class="mb-3"></h5>
+			<hr id="lineCard" class='mb-12'>
+		<div class="row" id="content"></div>
+		<h5 id="title1" class="mb-3"></h5>
+			<hr id="lineCard1" class='mb-12'><br />	
+		<div class="row" id="content1"></div>
+			<hr id="lineCard2" class='mb-12'>
+<!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD --><!-- CARD -->
+<!--</form>-->
+			
+			<div id="card"></div>
+			
+			
+			<div id="jumbShow" class="jumbotron">
+				<div class="row">
+				  <div class="col-md-6 mb-3" id="showInfo">
+						<p id="flightDetail" class="lead"></p>
+						<hr class="my-2">
+						<!--<h5 id="one" class="colorJomb"></h5>
+						<p id="two" class="lead"></p>
+						<small>*exclude meal, luggage and entertainment.</small>
+						<br><br>-->
+				  </div>
+				  
+				  <div class="col-md-3 mb-3" >
+						<label for="meal">Meal:</label>
+						<select class="custom-select d-block w-100" id="meal" required="">
+							<option value="">Choose...</option>
+							<option>Chicken - AUD $15</option>
+							<option>Beef - AUD $18</option>
+							<option>Fish - AUD $20</option>
+							<option>None</option>
+						</select>
+					</div>
+							<br> <!--<hr class="my-2">-->
+				<div class="col-md-3 mb-3" >			
+						<label for="luggage">Luggage:</label>
+						<select class="custom-select d-block w-100" id="luggage" required="">
+							<option value="">Choose...</option>
+							<option>20kg - AUD $80</option>
+							<option>15kg - AUD $60</option>
+							<option>10kg - AUD $40</option>
+							<option>None</option>
+						</select>
+				</div>
+				</div>
+				<div class="row">
+				 <div class="col-md-6 mb-3" id="showInfo">
+						<!--<p class="lead">Flight Details:</p>
+						<hr class="my-2">-->
+						<h5 id="one"></h5>
+						<p id="two" class="lead"><p></p>
+						<small>*price excludes meal, luggage and entertainment.</small>
+						</p>
+						<br><!--<br><br>-->
+				  </div>
+					<br>
+				<div class="col-md-3 mb-3" >			
+						<label for="entertainment">Entertainment:</label>
+						<select class="custom-select d-block w-100" id="entertainment" required="">
+							<option value="">Choose...</option>
+							<option>Tablet set - AUD $20</option>
+							<option>Movies - AUD $15</option>
+							<option>Other - AUD $10</option>
+							<option>None</option>
+						</select>
+				</div>
+				
+				<div class="col-md-3 mb-3" >			
+						<label for="entertainment">Seat:</label>
+						<select class="custom-select d-block w-100" id="seat" required="">
+							<option value="">Choose...</option>
+							<option>16-D</option>
+							<option>17-C</option>
+							<option>18-A</option>
+							<option>18-C</option>
+							<option>19-A</option>
+							<option>20-E</option>
+							<option>21-A</option>
+							<option>21-B</option>
+							<option>21-C</option>
+							<option>28-B</option>
+							<option>40-C</option>
+							<option>40-D</option>
+							<option>40-E</option>
+							<option>41-A</option>
+							<option>45-B</option>
+							<option>50-D</option>
+						</select>
+				</div>
+									
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h3 id="displayTicket" class="colorJomb"></h3>
+						<!--<small id="displayInfo"></small>-->
+						<p id="displayInfo"></p>
+					</div>
+					
+					<div id="btnPay" class="col-md-3">
+						<button onclick="paymentClick()" class="btn btn_color1 btn-sm-1 btn-block" type="submit">Payment</button>
+					</div>
+					
+					<div class="col-md-3">
+						<button onclick="clickCalculateBook()" class="btn btn_color btn-sm-1 btn-block" type="submit">Calculate</button>
+					</div>
+					
+				</div>
+			</div>
+	
+	<div id="paymentDiv">
+	<div class="row">
+		<div class="col-md-12 order-md-1">
+				<div class="row">
+					<div id="contPayment"  class="col-md-6 order-md-1 jumbotron">
+						<h4 class="mb-3">Personal details</h4>
+						<!--<form class="needs-validation" novalidate="">-->
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="firstName">First name</label>
+								<input type="text" class="form-control" id="firstName" placeholder="John" value="" required="">
+								<div class="invalid-feedback">Valid first name is required.</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="lastName">Last name</label>
+								<input type="text" class="form-control" id="lastName" placeholder="Smith" value="" required="">
+								<div class="invalid-feedback">Valid last name is required.</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<div class="mb-3">
+									<label for="username">Date of birth</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">@</span>
+										</div>
+										<input type="text" class="form-control" id="dob" placeholder="dd-mm-yyyy" required="">
+										<div class="invalid-feedback" style="width: 100%;">Your date of birth is required.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">	
+								<div class="mb-3">
+									<label for="username">Username<span class="text-muted"> (Optional)</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">@</span>
+										</div>
+										<input type="text" class="form-control" id="username" placeholder="" required="">
+										<div class="invalid-feedback" style="width: 100%;">Your username is required.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mb-3">
+						  <label for="email">Email</label>
+						  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+						  <div class="invalid-feedback">Please enter a valid email addres.</div>
+						</div>
+						<div class="mb-3">
+						  <label for="email">Email confirmation</label>
+						  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+						  <div class="invalid-feedback">Please enter a valid email addres.</div>
+						</div>
+
+						<hr class="mb-4">
+								
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="save-info">
+									<label class="custom-control-label" for="save-info">Save information for next time</label>
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<button type="button" onclick="clickPayment()" class="btn btn_color btn-sm-1 btn-block" data-toggle="modal" data-target="#staticBackdrop">Continue payment</button>
+							</div>
+						</div>
+						
+						<div class="mb-3">
+						  <div id="test"></div> 
+						</div>
+					</div>
+					
+
+					<div id="paymentJump" class="col-md-6 order-md-1 jumbotron">
+							<h4 class="mb-3">Payment</h4>
+
+							<div class="d-block my-3">
+							  <div class="custom-control custom-radio">
+								<input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+								<label class="custom-control-label" for="credit">Credit card</label>
+							  </div>
+							  <div class="custom-control custom-radio">
+								<input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+								<label class="custom-control-label" for="debit">Debit card</label>
+							  </div>
+							  <div class="custom-control custom-radio">
+								<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+								<label class="custom-control-label" for="paypal">PayPal</label>
+							  </div>
+							</div>
+							
+							<div class="row">
+							  <div class="col-md-6 mb-3">
+								<label for="cc-name">Name on card</label>
+								<input type="text" class="form-control" id="cc-name" placeholder="" required="">
+								<small class="text-muted">Full name as displayed on card</small>
+								<div class="invalid-feedback">Name on card is required</div>
+							  </div>
+							  <div class="col-md-6 mb-3">
+								<label for="cc-number">Credit card number</label>
+								<input type="text" class="form-control" id="cc-number" placeholder="" required="">
+								<div class="invalid-feedback">Credit card number is required</div>
+							  </div>
+							</div>
+							<div class="row">
+							  <div class="col-md-3 mb-3">
+								<label for="cc-expiration">Expiration</label>
+								<input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+								<div class="invalid-feedback">Expiration date required</div>
+							  </div>
+							  <div class="col-md-3 mb-3">
+								<label for="cc-cvv">CVV</label>
+								<input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+								<div class="invalid-feedback">Security code required</div>
+							  </div>
+							</div>
+							<hr class="mb-4">
+							<button id="payButton" data-toggle="modal" data-target="#staticBackdrop1" onclick="payBtnCalc()" class="btn btn_color btn-sm-1 btn-block" type="button">Pay</button>
+						  <!--</form>-->
+					</div>
+				</div>
+		</div>
+	</div>
+	</div>
+	
+	<div id="card1"></div>
+	<div id="pay"></div> 
+	<div id="showCust"></div>
+	<div id="showCustChange"></div>
+	
+  </div>	
+  </div>
+  </div>
+ 
+</div>
+		<!-- FOOTER -->
+	  <div class="mt-5 pt-5 pb-5 footer">
+	 <div class="container">
+	  <div class="row">
+		<div class="col-lg-5 col-xs-12 about-company">
+		  <h2>FlyDreamAir</h2>
+		  <p class="pr-5 text-white-50">Explore Australia with Fly Dream Airlines</p>
+		  <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+		</div>
+		<div class="col-lg-3 col-xs-12 links">
+		  <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+			<ul class="m-0 p-0">
+			  <li>- <a href="#">About us</a></li>
+			  <li>- <a href="#">Office Locations</a></li>
+			  <li>- <a href="#">Sales</a></li>
+			  <!--<li>- <a href="#">Some Page 4</a></li>-->
+			</ul>
+		</div>
+		<div class="col-lg-4 col-xs-12 location">
+		  <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+		  <p>Sydney NSW 2020 Australia</p>
+		  <p class="mb-0"><i class="fa fa-phone mr-3"></i>(777) 777-7777</p>
+		  <p><i class="fa fa-envelope-o mr-3"></i>flydreamair@flydreamair.com</p>
+		</div>
+	  </div>
+	  <div class="row mt-1">
+		<div class="col copyright">
+		  <a href="#"><img class="d-block mx-auto" src="FlyDreamAir.png" alt="" width="100" height="100"></a>
+		  <!--<small class="d-block text-white-50">2020 © FlyDreamAir</small>-->
+		</div>
+	  </div>
+	<div class="container">
+		<div class="carousel slide" data-interval="5000" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="kangaroo00.jpg" alt="1 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="sydney2.jpg" alt="2 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="kangaroo66.jpg" alt="3 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="frazer.jpg" alt="4 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="12 Apostles1.jpg" alt="5 slide"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="sydneyBridge.jpg" alt="6 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="kangaroo44.jpg" alt="7 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="melbourne1.jpg" alt="8 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="signs1.jpg" alt="9 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="darwin.jpg" alt="10 slide"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="brisbane1.jpg" alt="11 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="signs1.jpg" alt="12 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="croc45.jpg" alt="13 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="goldCoast3.jpg" alt="14 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="kangaroo22.jpg" alt="15 slide"></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="kangaroo33.jpg" alt="11 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="sydney.jpg" alt="12 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="perth1.jpg" alt="13 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="goldCoast2.jpg" alt="14 slide"></div>
+						<div class="col"><img class="d-block w-100 img-fluid rounded mx-auto" src="brisbane.jpg" alt="15 slide"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+	<script src="form-validation.js"></script>-->
+</body>
+<script type="text/javascript">
+var dateStartReturn = moment().format('YYYY-MM-DD');
+var dateEndReturn = new Date();
+var dateStartOneWay;
+var checkDateReturn = new Date();
+var checkDateOneWay = moment().format('YYYY-MM-DD');
+
+var currentDate = moment().format('YYYY-MM-DD');
+
+var q = new Date();
+var year = q.getFullYear(); var month = q.getMonth();
+
+function randoNumber() {
+	var num = Math.floor((Math.random() * 1000) + 50.00);
+	var n = num.toFixed(2);
+	return n;
+}
+
+	// RETURN //
+$(function() {
+  $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+          cancelLabel: 'Clear'
+      }
+  });
+  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+	  dateStartReturn = null;
+      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+	  dateStartReturn = picker.startDate.format('DD/MM/YYYY');
+	  dateEndReturn = picker.endDate.format('DD/MM/YYYY');
+	  //dateStartReturn = picker.startDate.format('DD/MM/YYYY');
+	  //dateEndReturn = picker.endDate.format('DD/MM/YYYY');
+	  checkDateReturn = picker.startDate.format('YYYY-MM-DD');
+  });
+  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+});
+
+	// SINGLE //
+$(function() {
+
+$('input[name="singleDate"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+          cancelLabel: 'Clear'
+      }
+  });
+
+  $('input[name="singleDate"]').daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true,
+    minYear: year,
+	minMonth: month,
+    maxYear: parseInt(moment().format('YYYY'),10)
+  }, function(start, end, label) {	//var years = moment().diff(start, 'years');
+		dateStartOneWay = start.format('DD/MM/YYYY'); //document.getElementById("show2").innerHTML = date1;
+		checkDateOneWay = start.format('YYYY-MM-DD');
+  });
+  /*$('input[name="singleDate"]').on('cancel.daterangepicker', function() {
+      $(this).val('');
+  });*/
+});
+
+	// YES NO //
+function yesnoCheck() {
+    if ($('input[id=single]:checked').length > 0) {
+		document.getElementById("showMainBtn").style.display = "block";
+		document.getElementById("firstDate").style.display = "block";
+		document.getElementById("secondDate").style.display = "none";
+		document.getElementById("show").innerHTML = "";
+		document.getElementById("content1").style.display = "none";
+		document.getElementById("content").style.display = "none";
+		document.getElementById("title").style.display = "none";
+		document.getElementById("title1").style.display = "none";
+		document.getElementById("lineCard1").style.display = "none";
+		document.getElementById("lineCard2").style.display = "none";
+		document.getElementById("lineCard").style.display = "none";
+    }
+	if ($('input[id=return]:checked').length > 0) {
+			//document.getElementById("showInfo").style.display = "none";
+			//document.getElementById("showInfo1").style.display = "none";
+			document.getElementById("showMainBtn").style.display = "block";
+			document.getElementById("jumbShow").style.display = "none";
+			
+        document.getElementById("secondDate").style.display = "block";
+		document.getElementById("firstDate").style.display = "none";
+		document.getElementById("show").innerHTML = "";
+		document.getElementById("content").style.display = "none";
+		document.getElementById("content1").style.display = "none";
+		document.getElementById("title").style.display = "none";
+		document.getElementById("title1").style.display = "none";
+		document.getElementById("lineCard").style.display = "none";
+		document.getElementById("lineCard1").style.display = "none";
+		document.getElementById("lineCard2").style.display = "none";
+    }
+}
+
+var cities = ["Adelaide","Melbourne","Sydney","Seattle","Berlin","Brisbane","Darwin","Gold Coast","Perth","Paris","Tokyo","New York","Los-Angeles","Washington","Moscow","Berlin","Beijing","London","Miami","Seoul"];
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+      x[i].parentNode.removeChild(x[i]);
+    }
+  }
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
+});
+}
+autocomplete(document.getElementById("depart"), cities);
+autocomplete(document.getElementById("arrive"), cities);
+
+// Check same city inputs
+function findCityArrival(city){
+	var arrival = document.getElementById("arrive").value;
+	return city == arrival;
+}
+function findCityDepart(city){
+	var departure = document.getElementById("depart").value;
+	return city == departure;
+}
+
+// END Check same city inputs
+
+function validateName() {
+	 document.getElementById('updateDiv').scrollIntoView();// JUMP TO SPECIFIC ID
+			var arrivalCityCheck = cities.find(findCityArrival);
+			var departureCityCheck = cities.find(findCityDepart);
+		var arrival = document.getElementById("arrive").value;
+		var departure = document.getElementById("depart").value;
+	
+		if ($('input[id=single]:checked').length > 0) {
+			if(checkDateOneWay <= currentDate || arrival == null || departure == null  || arrival == "" || departure == "" ||
+				arrivalCityCheck == departureCityCheck || arrivalCityCheck == null || departureCityCheck == null){
+				document.getElementById("show").innerHTML = "Please check cities and dates";
+				document.getElementById("title").style.display = "none";
+				document.getElementById("title1").style.display = "none";
+				document.getElementById("lineCard").style.display = "none";
+				document.getElementById("lineCard1").style.display = "none";
+				document.getElementById("lineCard1").style.display = "none";
+				document.getElementById("content").style.display = "none";
+				document.getElementById("content1").style.display = "none";
+		} 
+		else {
+					loadCard();
+						document.getElementById("content").style.display = "inline-flex";
+						document.getElementById("show").innerHTML = "";
+					document.getElementById("title").style.display = "block";
+					document.getElementById("title1").style.display = "none";
+					document.getElementById("lineCard").style.display = "block";
+					document.getElementById("lineCard1").style.display = "block";
+					document.getElementById("title").innerHTML = "<span id='span1'>" + "From " + "</span>" + departure + "<span id='span1'>" + " to " + "</span>" + arrival;
+			}
+		}
+			// RETURN RETURN RETURN RETURN RETURN //
+		if ($('input[id=return]:checked').length > 0 && dateEndReturn != null) {
+			if(checkDateReturn <= currentDate || dateStartReturn == currentDate || checkDateReturn == undefined ||  arrival == null || departure == null  || arrival == "" || departure == "" ||
+			   arrivalCityCheck == departureCityCheck || arrivalCityCheck == null || departureCityCheck == null){
+				document.getElementById("show").innerHTML = "Please check cities and dates";
+				document.getElementById("title").style.display = "none";
+				document.getElementById("title1").style.display = "none";
+				document.getElementById("lineCard").style.display = "none";
+				document.getElementById("lineCard1").style.display = "none";
+				document.getElementById("lineCard2").style.display = "none";
+				document.getElementById("content").style.display = "none";
+				document.getElementById("content1").style.display = "none";
+			} else {
+					loadCard();
+						document.getElementById("content").style.display = "inline-flex";
+						document.getElementById("content1").style.display = "inline-flex";
+					document.getElementById("show").innerHTML = "";
+					document.getElementById("lineCard").style.display = "block";
+					document.getElementById("lineCard1").style.display = "block";
+					document.getElementById("lineCard2").style.display = "block";
+					document.getElementById("title").style.display = "block";
+					document.getElementById("title1").style.display = "block";
+					document.getElementById("title").innerHTML = "<span id='span1'>" + "From " + "</span>" + departure + "<span id='span1'>" + " to " + "</span>" + arrival;
+					document.getElementById("title1").innerHTML = "<span id='span1'>" + "From " + "</span>" + arrival + "<span id='span1'>" + " to " + "</span>" + departure;
+			}
+		}
+}
+
+class Flight {
+  constructor(id, arrival, departure, dateStart, time, time1, price) {
+	this.id = id;
+    this.arrival = arrival;
+    this.departure = departure;
+	this.dateStart = dateStart;
+	this.time = time;
+	this.time1 = time1;
+	this.price = price;
+  }
+}
+
+flights = new Array();
+var num = "FF157";
+
+var saveI;
+function clickAlertBook(i){
+	if ($('input[id=single]:checked').length > 0) {
+		saveI = i;
+		document.getElementById("jumbShow").style.display = "block";
+		document.getElementById("one").innerHTML = flights[i].arrival +  " to " + flights[i].departure + " - " + flights[i].time + ":" + flights[i].time1 + " - " + flights[i].dateStart;
+		document.getElementById("two").innerHTML = " AUD$ " + flights[i].price;
+		document.getElementById("flightDetail").innerHTML = "Flight Details: " + num;
+		document.getElementById("jumbShow").scrollIntoView();
+	}
+}
+
+
+function returnMealPrice(mealInput){
+	if(mealInput == "Chicken - AUD $15"){
+		var meal = parseFloat("15.00");
+		return meal; //return 15.00;
+	} else if(mealInput == "Beef - AUD $18"){
+		return 18.00;
+	} else if(mealInput == "Fish - AUD $20"){
+		return 20.00;
+	} else{
+		return 0.00;
+	}
+}
+
+function returnMealInfo(mealInput){
+	if(mealInput == "Chicken - AUD $15"){
+		return "Chicken";
+	} else if(mealInput == "Beef - AUD $18"){
+		return "Beef";
+	} else if(mealInput == "Fish - AUD $20"){
+		return "Fish";
+	} else{
+		return "None";
+	}
+}
+
+function returnEntertainmentPrice(entInput){
+	if(entInput == "Tablet set - AUD $20"){
+		var ent = parseFloat("20.00");
+		//return ent; //return 20.00;
+		return 20.00;
+	} else if(entInput == "Movies - AUD $15"){
+		return 15.00;
+	} else if(entInput == "Other - AUD $10"){
+		return 10.00;
+	} else{
+		return 0.00;
+	}
+}
+
+function returnEntInfo(entInput){
+	if(entInput == "Tablet set - AUD $20"){
+		return "Tablet set";
+	} else if(entInput == "Movies - AUD $15"){
+		return "Movies";
+	} else if(entInput == "Other - AUD $10"){
+		return "Other";
+	} else{
+		return "None";
+	}
+}
+
+function returnLuggagePrice(luggageInput){
+	if(luggageInput == "20kg - AUD $80"){
+		return 80.00;
+	} else if(luggageInput == "15kg - AUD $60"){
+		//var lugg = parseFloat("60.00");
+		return 60.00; //return 60.00;
+	} else if(luggageInput == "10kg - AUD $40"){
+		return 40.00;
+	} else{
+		return 0.00;
+	}
+}
+
+function returnLuggageInfo(luggageInput){
+	if(luggageInput == "20kg - AUD $80"){
+		return "20kg";
+	} else if(luggageInput == "15kg - AUD $60"){
+		return "15kg";
+	} else if(luggageInput == "10kg - AUD $40"){
+		return "10kg";
+	} else{
+		return "None";
+	}
+}
+
+class FlightExtra {
+  //constructor(){}
+  //constructor(arrival?:string, departure?:string, dateStart?:string, time?:number, time1?:number, price?:number, meal?:string, luggage?:string, entertainment?:string, seat?:string, num?:string) {
+  //constructor(arrival?, departure?, dateStart?, time?, time1?, price?, meal?, luggage?, entertainment?, seat?, num?) {
+  constructor(arrival, departure, dateStart, time, time1, price, meal, luggage, entertainment, seat, num, total, totalAll) {
+    this.arrival = arrival;
+    this.departure = departure;
+	this.dateStart = dateStart;
+	this.time = time;
+	this.time1 = time1;
+	this.price = price;
+	this.meal = meal;
+	this.luggage = luggage;
+	this.entertainment = entertainment;
+	this.seat = seat;
+	this.num = num;
+	this.total = total;
+	this.totalAll = totalAll;
+  }
+}
+
+flightExtraSingle;
+
+var totalAll;
+function clickCalculateBook(){
+	if ($('input[id=single]:checked').length > 0) {
+		var meal = document.getElementById("meal").value;
+		var luggage = document.getElementById("luggage").value;
+		var entertainment = document.getElementById("entertainment").value;
+		var seat = document.getElementById("seat").value;
+			var mealRrice = returnMealPrice(meal);
+			var entPrice = returnEntertainmentPrice(entertainment);
+			var luggagePrice = returnLuggagePrice(luggage);
+		var totalPrice = mealRrice + entPrice + luggagePrice;
+			var priceSave = parseFloat(flights[saveI].price);
+		totalAll = totalPrice + priceSave;
+
+		flightExtraSingle = new FlightExtra(flights[saveI].arrival, flights[saveI].departure, flights[saveI].dateStart, flights[saveI].time, flights[saveI].time1, 
+							parseFloat(flights[saveI].price), meal, luggage, entertainment, seat, num, parseFloat(totalPrice), parseFloat(totalAll));
+		
+	/*document.getElementById("displayTicket").innerHTML = flightExtraSingle.arrival + " " + flightExtraSingle.departure + " " + flightExtraSingle.dateStart + " " + 
+		flightExtraSingle.time + " " + flightExtraSingle.time1 + " " +  flightExtraSingle.price + " " + flightExtraSingle.meal + " " + flightExtraSingle.luggage + 
+		" " + flightExtraSingle.entertainment + " " + flightExtraSingle.seat + " " + " " + flightExtraSingle.num + " " + flightExtraSingle.total.toFixed(2) + 
+		" " + flightExtraSingle.totalAll.toFixed(2);*/
+		
+		//document.getElementById("displayTicket").innerHTML = totalPrice + " " + flights[saveI].price + " " + totalAll + " " + mealRrice;
+		document.getElementById("displayTicket").innerHTML = "Total amount: AUD$ " + totalAll.toFixed(2);
+		
+		document.getElementById("displayInfo").innerHTML = "Seat: " + flightExtraSingle.seat + ". Meal: " + returnMealInfo(flightExtraSingle.meal) + ". Luggage: " + 
+								returnLuggageInfo(flightExtraSingle.luggage) + ". Entertainment: " + returnEntInfo(flightExtraSingle.entertainment);
+								
+		document.getElementById("btnPay").style.display = "inline";
+	}
+}
+
+function paymentClick(){
+	if ($('input[id=single]:checked').length > 0) {
+		document.getElementById("paymentDiv").style.display = "block";
+		document.getElementById("jumbShow").style.backgroundColor = "#ebf2fa";
+		document.getElementById("paymentDiv").scrollIntoView();
+	}
+}
+
+function clickAlertPayment(){
+	if ($('input[id=single]:checked').length > 0) {
+		document.getElementById("paymentJump").style.display = "block";
+		document.getElementById("contPayment").style.backgroundColor = "#ebf2fa";
+	}
+}
+
+var fn; var ln; var email; var userName; var dob;
+function clickPayment(){
+				document.getElementById('paymentDiv').scrollIntoView();
+	fn = document.getElementById("firstName").value;
+	ln = document.getElementById("lastName").value;
+	dob = document.getElementById("dob").value;
+	userName = document.getElementById("username").value;
+	email = document.getElementById("email").value;
+	//document.getElementById("test").innerHTML = fn + " " + ln + " " + dob + " " + userName + " " + email;
+  
+  var sss = "<div class='modal fade' id='staticBackdrop' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>"
+  + "<div class='modal-dialog modal-dialog-centered'>"
+  +  "<div class='modal-content'>"
+  +    "<div class='modal-header'>"
+  +      "<h5 class='modal-title' id='staticBackdropLabel'>" + "Please confirm personal details: " + fn +  " " + ln + "</h5>"
+  +      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  +        "<span aria-hidden='true'>" + "&times;" + "</span>"
+  +      "</button>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "Full name: " + fn + " " + ln + "</p>"
+  +		 "<p>" + "Date of birth: " + dob + "</p>"
+  +		 "<p>" + "Email: " + email + "</p>"
+  +		 "<p>" + "UserName: " + userName + "</p>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  //+      "<p>" + "If you " + fn + " would like to stay with us" + "</p>"
+  +      "<p>" + "Please " + fn + " stay with us and complete registration." + "</p>"
+  +      "<p>" + "The temprorary password was sent to your email." + "</p>"
+  +      "<p>" + "Please check it and finalize." + "</p>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "Thank you" + "</p>"
+  +    "</div>"
+  +    "<div class='modal-footer'>"
+  +      "<button type='button' class='btn btn-secondary' data-dismiss='modal'>" + "Cancel" + "</button>"
+  +      "<button type='button' data-dismiss='modal' onclick='clickAlertPayment()' class='btn btn_color'>" + "Correct" + "</button>"
+  +    "</div>"
+  +  "</div>"
+  +"</div>"
+  +"</div>";
+
+  document.getElementById("card1").innerHTML = sss;
+}
+
+/*function updateDiv(){ 
+    $( "#updateDiv" ).load(window.location.href + " #updateDiv" );
+}
+
+$(function() {
+  $('#payButton').click(function() {
+    var self = window.location.href;
+    console.log("Loading '#updateDiv' from " + self);
+    $('#payButton').load(self + ' #updateDiv');
+  });
+});*/
+
+function payBtnCalc(){
+	var aaa = "<div class='modal fade' id='staticBackdrop1' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>"
+  + "<div class='modal-dialog modal-dialog-centered'>"
+  +  "<div class='modal-content'>"
+  +    "<div class='modal-header'>"
+  +      "<h5 class='modal-title' id='staticBackdropLabel'>" + "Payment confirmaton" + "</h5>"
+  +      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  +        "<span aria-hidden='true'>" + "&times;" + "</span>"
+  +      "</button>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "Thank you " + fn + "!" + "</p>"
+  +      "<p>" + "Payment " + " of " + " AUD$ " + totalAll + " has been processed" + "</p>"
+  +      "<p>" + "An email with details has been sent to " + email + "</p>"
+  +    "</div>"
+  +    "<div class='modal-footer'>"
+  +      "<button type='button' data-dismiss='modal' onclick='clickAlertPayment()' class='btn btn_color'>" + "Close" + "</button>"
+  +    "</div>"
+  +  "</div>"
+  +"</div>"
+  +"</div>";
+
+  document.getElementById("pay").innerHTML = aaa;
+ 
+  document.getElementById("custInfo").innerHTML = fn + " " + ln;
+  
+		document.getElementById("showMainBtn").style.display = "none";
+		document.getElementById("jumbShow").style.display = "none";	
+        document.getElementById("secondDate").style.display = "none";
+		document.getElementById("firstDate").style.display = "none";
+		document.getElementById("show").innerHTML = "";
+		document.getElementById("lineCard2").style.display = "none";
+		document.getElementById("title").style.display = "none";
+		document.getElementById("title1").style.display = "none";
+		document.getElementById("lineCard").style.display = "none";
+		document.getElementById("lineCard1").style.display = "none";
+		document.getElementById("lineCard1").style.display = "none";
+		document.getElementById("content").style.display = "none";
+		document.getElementById("content1").style.display = "none";
+		document.getElementById("paymentDiv").style.display = "none";
+		document.getElementById("paymentJump").style.display = "none";
+		
+		document.getElementById("arrive").value = "";
+		document.getElementById("depart").value = "";
+		
+		//document.getElementByName("single").checked = false;
+		//document.getElementByName("return").checked = false;
+		
+		/*if($('#single').is(':checked')){
+			$('#single').attr('checked', false);
+		}else{
+			$('#single').attr('checked', true);
+		}
+		
+		if($('#return').is(':checked')){
+			$('#return').attr('checked', false);
+		}else{
+			$('#return').attr('checked', true);
+		}*/
+				
+		//document.getElementById("single").reset(); 
+		//document.getElementById("return").reset();
+		
+		/*$('#updateDiv').load('main.html #updateDiv');
+		
+		$('#updateDiv').load(document.URL + ' #updateDiv>*');
+		
+		$( "#here" ).load(window.location.href + " #here" );
+		
+		updateDiv();
+		
+		$.get('/api/updateDiv', function(data) {
+			$('#updateDiv').html(data);
+		});*/
+		
+		var elements = document.getElementsByTagName("input");
+
+		for (var i = 0; i < elements.length; i++) {
+			if (elements[i].type == "radio") {
+				elements[i].checked = false;
+			}
+		}
+		
+	document.getElementById("bodyId").scrollIntoView();
+  //location.reload();
+}
+
+function custInfoFunc(){
+	var qqq = "<div class='modal fade' id='staticBackdrop2' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>"
+  + "<div class='modal-dialog modal-dialog-centered'>"
+  +  "<div class='modal-content'>"
+  +    "<div class='modal-header'>"
+  +      "<h5 class='modal-title' id='staticBackdropLabel'>" + "Order details for " + fn + " " + ln + "</h5>"
+  +      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  +        "<span aria-hidden='true'>" + "&times;" + "</span>"
+  +      "</button>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + fn + " " + ln + "</p>"
+  +      "<p>" + dob + "</p>"
+  +      "<p>" + email + "</p>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "From: " + flights[saveI].arrival + " to " + flights[saveI].departure + "</p>"
+  +      "<p>" + "Flight number: " + num + "</p>"
+  +      "<p>" + "Flight time : " + flights[saveI].time + ":" + flights[saveI].time1 + "</p>"
+  +      "<p>" + "Flight date: " + flights[saveI].dateStart + "</p>"
+  +      "<p>" + "Amount paid: " + " AUD$ " + totalAll + "</p>"  
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "Seat: " + flightExtraSingle.seat + "</p>"
+  +      "<p>" + "Meal: " + flightExtraSingle.meal + "</p>"
+  +      "<p>" + "Luggage: " + flightExtraSingle.luggage + "</p>"
+  +      "<p>" + flightExtraSingle.entertainment + "</p>" 
+  +    "</div>"
+  //+    "<div class='modal-body'>"
+  //+      "<button data-toggle='modal' data-target='#staticBackdrop3' onclick='changeCust()' type='button' class='btn btn_color1 btn-sm-1 btn-block'>" + "Update meal, luggage or entertainment" + "</button>"
+  //+    "</div>"
+  +    "<div class='modal-footer'>"
+  +      "<button type='button' data-dismiss='modal' onclick='clickAlertPayment()' class='btn btn_color'>" + "Close" + "</button>"
+  +    "</div>"
+  +  "</div>"
+  +"</div>"
+  +"</div>";
+  document.getElementById("showCust").innerHTML = qqq;
+}
+
+function changeCust(){
+	var fff = "<div class='modal fade' id='staticBackdrop3' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>"
+  + "<div class='modal-dialog modal-dialog-centered'>"
+  +  "<div class='modal-content'>"
+  +    "<div class='modal-header'>"
+  +      "<h5 class='modal-title' id='staticBackdropLabel'>" + "Order details for " + fn + " " + ln + "</h5>"
+  +      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  +        "<span aria-hidden='true'>" + "&times;" + "</span>"
+  +      "</button>"
+  +    "</div>"
+  +    "<div class='modal-body'>" 	//<input type="text" class="form-control" id="depart" placeholder="" value="" required="">
+  +      "<p>" + fn + " " + ln + "</p>"
+  //+		 "<label>" + "Update firts name" + "</label>"
+  //+      "<input type='text' placeholder="+fn+">"
+  //+		 "<label>" + "Update last name" + "</label>"
+  //+      "<input type='text' placeholder="+ln+">"
+  +      "<p>" + dob + "</p>"
+  +      "<p>" + email + "</p>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "From: " + flights[saveI].arrival + " to " + flights[saveI].departure + "</p>"
+  +      "<p>" + "Flight number: " + num + "</p>"
+  +      "<p>" + "Flight time : " + flights[saveI].time + ":" + flights[saveI].time1 + "</p>"
+  +      "<p>" + "Flight date: " + flights[saveI].dateStart + "</p>"
+  +      "<p>" + "Amount paid: " + " AUD$ " + totalAll + "</p>"  
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "Seat: " + flightExtraSingle.seat + "</p>"
+  +      "<p>" + "Meal: " + flightExtraSingle.meal + "</p>"
+  +      "<p>" + "Luggage: " + flightExtraSingle.luggage + "</p>"
+  +      "<p>" + flightExtraSingle.entertainment + "</p>" 
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<button onclick='changeCust()' type='button' class='btn btn_color1 btn-sm-1 btn-block'>" + "Change" + "</button>"
+  +    "</div>"
+  +    "<div class='modal-footer'>"
+  +      "<button type='button' data-dismiss='modal' onclick='clickAlertPayment()' class='btn btn_color'>" + "Close" + "</button>"
+  +    "</div>"
+  +  "</div>"
+  +"</div>"
+  +"</div>";
+  document.getElementById("showCustChange").innerHTML = fff;
+}
+
+function clickBook(i){
+	//document.getElementById('content').scrollIntoView();
+	//document.getElementById('jumbShow').scrollIntoView();
+
+ var ddd = "<div class='modal fade' id='exampleModalCenter' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>"
+  + "<div class='modal-dialog modal-dialog-centered' role='document'>"
+  +  "<div class='modal-content'>"
+  +    "<div class='modal-header'>"
+  +      "<h5 class='modal-title' id='exampleModalLongTitle'>" + "Please confirm flight: " + flights[i].arrival +  " to " + flights[i].departure + "</h5>"
+  +      "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>"
+  +        "<span aria-hidden='true'>" + "&times;" + "</span>"
+  +      "</button>"
+  +    "</div>"
+  +    "<div class='modal-body'>"
+  +      "<p>" + "From: " + flights[i].arrival + " to " + flights[i].departure + "</p>"
+  +      "<p>" + "Flight number: " + num + "</p>"
+  +      "<p>" + "Flight time : " + flights[i].time + ":" + flights[i].time1 + "</p>"
+  +      "<p>" + "Flight date: " + flights[i].dateStart + "</p>"
+  +      "<p>" + "Price: " + " AUD$ " + flights[i].price + "</p>"  
+  +    "</div>"
+  +    "<div class='modal-footer'>"
+  +      "<button type='button' class='btn btn-secondary' data-dismiss='modal'>" + "Cancel" + "</button>"
+  +      "<button data-dismiss='modal' onclick=clickAlertBook("+i+") type='button' class='btn btn-primary btn_color'>" + "Book" + "</button>"
+  +    "</div>"
+  +  "</div>"
+  + "</div>"
+  + "</div>";
+document.getElementById("card").innerHTML = ddd;
+
+
+		document.getElementById("jumbShow").style.backgroundColor = "#c3d7ef";
+		document.getElementById("contPayment").style.backgroundColor = "#c3d7ef";
+		document.getElementById("paymentJump").style.backgroundColor = "#c3d7ef";
+		document.getElementById("btnPay").style.display = "none";
+		document.getElementById("displayTicket").innerHTML = "";
+		document.getElementById("displayInfo").innerHTML = "";
+}
+
+function loadCard(){
+	var arrival = document.getElementById("depart").value;
+	var departure = document.getElementById("arrive").value;
+	var x = "";
+	
+if ($('input[id=single]:checked').length > 0) {
+	var time = 7.00; var time1 = 15;
+	for(var i = 0; i < 8; i++){
+		var price = randoNumber();
+			singleFlight = new Flight(i+1, arrival, departure, dateStartOneWay, time, time1, parseFloat(price).toFixed(2));
+			//flights.push(singleFlight);
+			flights[i] = singleFlight;
+		x += "<div class='col-md-3'>" +
+				"<div class='card package-card'>"
+					+ "<img id='imageId' class='card-img-top' src = 'FlyDreamAir1.png'>"
+					+ "<div class='card-body badge card-img-overlay'>"
+						+ "<h5 class='card-title package-card-title'>" + arrival +  " to " + departure + "</h5>"
+						+ "<h6 id='boldText' class='card-text'>" + dateStartOneWay + " - " + time + ":" + time1 + "</h6>"
+						+ "<h5 id='boldText' class='card-text'>" + "<label id='labelTetx'>" + " AUD$ " + "</label> " + price + "</h5>"
+						+ "<button data-toggle='modal' data-target='#exampleModalCenter' onclick=clickBook("+i+") id="+i+" class='btn btn-outline-info' value="+i+">" + "Book " + /*(i+1) +*/ "</button>"
+					+ "</div>" +
+				"</div>" + "<br />" +
+			 "</div>";
+			 time+=2.00;
+			 if(time > 21){
+				time = 5;
+			 }
+	}
+//<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">BTN</button>
+}
+
+var y = ""; var z = "";
+if ($('input[id=return]:checked').length > 0) {
+	var time = 7.00; var time1 = 15;
+	for(var i = 0; i < 8; i++){
+		x += "<div class='col-md-3'>" +
+				"<div class='card package-card'>"
+					+ "<img id='imageId' class='card-img-top' src = 'FlyDreamAir1.png'>"
+					+ "<div class='card-body badge card-img-overlay'>"
+						+ "<h5 class='card-title package-card-title'>" + arrival +  " to " + departure + "</h5>"
+						+ "<h6 id='boldText' class='card-text'>" + dateStartReturn + " - " + time + ":" + time1 + "</h6>"
+						+ "<h5 id='boldText' class='card-text'>" + "<label id='labelTetx'>" + " AUD$ " + "</label> " + randoNumber() + "</h5>"
+						+ "<a href='#' class='btn btn-outline-info'>" + "Book" + "</a>"
+					+ "</div>" +
+				"</div>" + "<br />" + "<br />" +
+			 "</div>";
+		time += 2.00;
+		if(time > 21){time = 9;}
+	}
+	
+	//var time11 = 7.00; var time12 = 15;
+	for(var i = 0; i < 8; i++){
+		y += "<div class='col-md-3'>" +
+				"<div class='card package-card'>"
+					+ "<img id='imageId' class='card-img-top' src = 'FlyDreamAir1.png'>"
+					+ "<div class='card-body badge card-img-overlay'>"
+						+ "<h5 class='card-title package-card-title'>" + departure +  " to " + arrival + "</h5>"
+						+ "<h6 id='boldText' class='card-text'>" + dateEndReturn + " - " + time + ":" + time1 + "</h6>"
+						+ "<h5 id='boldText' class='card-text'>" + "<label id='labelTetx'>" + " AUD$ " + "</label> " + randoNumber() + "</h5>"
+						+ "<a href='#' class='btn btn-outline-info'>" + "Book" + "</a>"
+					+ "</div>" +
+				"</div>" + "<br />" +
+			 "</div>";
+		time += 2.00;
+	}
+} 
+document.getElementById("content").innerHTML = x;
+document.getElementById("content1").innerHTML = y;
+	
+  /*for(var i = 0; i < 8; i++){
+	document.getElementById("test").innerHTML = flights[i].id + " " + flights[i].arrival + " " + flights[i].departure + " " + 
+	flights[i].dateStart + " " + flights[i].price;
+  }*/
+}
+</script>
+
+</body>
+
+</html>
